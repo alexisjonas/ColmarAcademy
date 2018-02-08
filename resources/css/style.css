@@ -1,0 +1,41 @@
+/* universal styles */
+html {
+  font-size: 16px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  height: 2rem;
+}
+
+header nav {
+  padding-right: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: black;
+}
+/* body */
+/* footer */
+footer {
+  display: flex;
+  align-items: flex-start;
+  top: 1rem;
+  padding-left: 1.5rem;
+  justify-content: space-between;
+}
+
+footer nav {
+  padding-right: 1rem;
+}
