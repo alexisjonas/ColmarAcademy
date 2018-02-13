@@ -29,6 +29,14 @@ nav a {
   padding-left: 1rem;
   color: black;
 }
+nav a:hover {
+  color: #F49F24;
+  transition: 1s linear;
+}
+.header-name {
+  color: #19818D;
+}
+
 .mobile-nav {
   display: none;
 }
@@ -40,7 +48,7 @@ nav a {
 }
 
 .first {
-  background-color: #BBBFBE;
+  background-color: #128F8E;
   top: 4rem;
 }
 
@@ -62,7 +70,6 @@ nav a {
 }
 
 .right h1 {
-  color: #3E403F;
   font-size: 2.75rem;
   line-height: 0.95;
   padding-bottom: 1.5rem;
@@ -75,14 +82,17 @@ nav a {
 
 .right .button {
   text-align: center;
-  background-color: #3E403F;
+  background-color: #F3B736;
   width: 40%;
-  color: #BBBFBE;
+  color: #F6F5F3;
   padding: 0.5rem 0;
 }
-
+.right .button:hover {
+  font-size: 1.5rem;
+  transition: font-size 1s linear;
+}
 .second {
-  background-color: white;
+  background-color: #F6F5F3;
 }
 .second .left h1 {
   font-size: 2.5rem;
@@ -118,16 +128,20 @@ nav a {
   line-height: 1.3;
 }
 
+.sidebar:last-child{
+  background-color: #128F8E;
+}
+
 .content h3{
   font-size: 1.4rem;
 }
 
-.content p {
-  color: grey;
-}
-
 .content a {
   text-decoration: none;
+  color: #F49F24;
+}
+.content a:hover {
+  font-weight: bold;
 }
 
 .left video {
@@ -138,7 +152,7 @@ nav a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: grey;
+  background-color: #128F8E;
   padding: 2rem 5rem;
 }
 
@@ -165,10 +179,13 @@ nav a {
 
 .course-info .content h3{
   padding-top: 1rem;
+  color: #19818D;
+  font-weight: bold;
 }
 
 .course-info .content h5{
   padding: 0.5rem 0;
+  color: #F3B736;
 }
 
 .title {
@@ -188,7 +205,6 @@ nav a {
 
 .fourth .left p {
   padding-bottom: 2rem;
-  color: grey;
 }
 
 .fourth .right {
