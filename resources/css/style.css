@@ -20,16 +20,16 @@ header {
   height: 2rem;
 }
 
-header nav {
+header .desktop-nav {
   padding-right: 1.5rem;
 }
 
-nav a {
+.desktop-nav a {
   text-decoration: none;
   padding-left: 1rem;
   color: black;
 }
-nav a:hover {
+.desktop-nav a:hover {
   color: #F49F24;
   transition: 1s linear;
 }
@@ -40,6 +40,7 @@ nav a:hover {
 .mobile-nav {
   display: none;
 }
+
 /* body */
 
 .container {
@@ -219,6 +220,9 @@ nav a:hover {
   text-align: center;
 }
 
+#mobile-img {
+  display: none;
+}
 /* footer */
 footer {
   display: flex;
@@ -231,4 +235,102 @@ footer {
 
 footer nav {
   padding-right: 1rem;
+}
+
+
+/* for mobile version */
+@media only screen and (max-width: 625px) {
+  /* these items will not be displayed */
+  .desktop-nav, .logo, .second .left h1, .second .left p, .second .left h4, .second .left img, .course-info img, .course-info h5, .course-info p,
+  .fourth .left h1, .fourth .left p, .fourth .left h1, .fourth .right img, .fourth .right h3 , .fourth .right span, footer nav {
+    display: none;
+  }
+
+  /* nav bar for mobile version */
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .first .left {
+    padding-top: 0;
+  }
+  .left, .right, .left img {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .button {
+    width: 70%;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .right h1 , .right p{
+    padding-left: 1rem;
+  }
+
+  .second .right {
+    padding-top: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar img {
+    width: 35%;
+    height: auto;
+  }
+
+  .sidebar .content {
+    text-align: left;
+    width: 65%;
+    line-height: 1.3;
+    padding-left: 1rem;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+  }
+
+  .desktop  {
+    display: none;
+  }
+
+  .sidebar #mobile-img {
+    display: block;
+    width: 90%;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .third {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .courses {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .course-info {
+    margin-bottom: 8px;
+    width: 90%;
+  }
+
+  .thesis, .fourth, .sidebar:last-child {
+    background-color: #F6F5F3;
+  }
+  .third {
+    background-color: #F3B736;
+  }
 }
